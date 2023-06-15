@@ -46,6 +46,8 @@ Our dataset consists of 1920 total images divided into 9 classes, with details a
 But in our training process, we limit each class to only use 203 images. The dataset itself is sourced from various sites, mainly from Kaggle, with addition from Cookpad, Twitter, Instagram, etc.
 
 ## Model Architecture
+For the main model we use transfer learning from MobileNetV2 and then added our own new layers, the input are images scale 224 x 224 x 3 (resize) and then create the model using mobilenetV2 (16 residual bottleneck layers) + 3 added new dense layers,  We then compile the model using optimizer rmsprop with learning rate = 0.0005 and the final output is the food classification (9 class in total)
+
 ![Arsitektur Model](Documentation/CNN_Model_Architecture.png) 
 
 ## Model Performance
