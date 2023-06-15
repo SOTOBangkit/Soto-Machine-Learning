@@ -37,7 +37,8 @@ But in our training process, we limit each class to only use 203 images. The dat
 ## Model Performance
 The model achieved 89.62% accuracy on the test dataset. With details as follows.
 
-
+![Test Performance](Documentation/Test Dataset Performance.jpg)
+![Accuracy and Loss](Documentation/Loss and Accuracy.jpg)
 
 ## References
 https://www.kaggle.com/datasets/faldoae/padangfood 
