@@ -2,15 +2,29 @@
 This repository contains a deep learning model built using TensorFlow for the recognition of Indonesian food.
 
 ## How to Run
-(masukkin yang elu bim, penomeran ke bawahnya entar sesuain aja) 
+1. Import libraries (numpy, pandas, matplotlib.pyplot, tensorflow).
 
-5. Make sure that the .h5 model is already saved in the “Model” folder. 
+2. We need creating file dataframe from the dataset.
 
-6. Run the converter_tflite.py script from your IDE or run the following command in the terminal that is running on the project directory. 
+3. Split the data into train and test set.
+
+4. Creating Image generator using ImageDataGenerator to add variance.
+
+5. Using MobileNetV2 as pretrained model.
+
+6. Add pretrained model as input in new layer for modelling.
+
+7. Compile and fit the model.
+
+8. Tune hyperparameter until get the best result.
+
+9. Make sure that the .h5 model is already saved in the “Model” folder. 
+
+10. Run the converter_tflite.py script from your IDE or run the following command in the terminal that is running on the project directory. 
 ```
 python converter_tflite.py
 ```
-7. Your .tflite model is now saved on the “Model” folder. 
+11. Your .tflite model is now saved on the “Model” folder. 
 
 ## Dataset
 ![Dataset_SS](Documentation/Dataset.jpg)
